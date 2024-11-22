@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>macOS Style Download</title>
+    <title>Download</title>
     <style>
         * {
             margin: 0;
@@ -110,8 +110,9 @@
 
     <script>
         function startDownload() {
-            // Add your download logic here
-            alert('Starting download...');
+            const link = document.createElement('a');
+            link.download = 'Hack.zip'; // Имя файла для сохранения
+            link.click();
         }
     </script>
 </body>
